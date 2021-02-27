@@ -1,0 +1,54 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Noto Serif", "Noto Serif JP", sans-serif;
+  font-style: normal;
+  color: #171717;
+  letter-spacing: 0.05em;
+  font-weight: 700;
+}
+
+b,
+strong,
+.bold {
+  font-family: "Noto serif jp", "Noto Serif", sans-serif;
+  font-style: normal;
+  /* bold */
+  font-weight: bold;
+  letter-spacing: 0.05em;
+}
+
+/* デフォルトのボールド指定を解除 */
+/* h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+} */
+
+img {
+  vertical-align: bottom;
+  /* float: left; */
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #171717;
+}
+
+input,
+textarea {
+  border: 1px solid #000;
+}
+
+button:focus {
+  outline: none;
+}

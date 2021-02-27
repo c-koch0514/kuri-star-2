@@ -1,0 +1,391 @@
+// 共通
+body {
+  // width: 375px; //これは後で消す。spのため
+  min-width: 345px;
+  // background-color: aqua;
+}
+.container {
+  width: 34.5rem;
+  margin: 0 auto;
+  padding-top: 10rem;
+  // background-color: antiquewhite;
+}
+.title {
+  font-size: 3rem;
+  font-style: italic;
+  line-height: 1.6;
+  letter-spacing: 0.1em;
+  color: #282f35;
+  display: flex;
+  align-items: center;
+  margin-bottom: 5rem;
+}
+.title::after {
+  content: "";
+  width: 10rem;
+  height: 0.5rem;
+  background-color: #282f35;
+  margin-left: 3.1rem;
+}
+.title-right {
+  color: #fff;
+  justify-content: flex-end;
+}
+.title-right::after {
+  background-color: #fff;
+}
+.read {
+  font-size: 1.5rem;
+  line-height: 1.875;
+}
+.our-left {
+  font-size: 4rem;
+  text-align: left;
+  padding: 4rem 0;
+  color: rgba(255, 255, 255, 0.1);
+}
+.our-right {
+  font-size: 4rem;
+  text-align: right;
+  padding: 4rem 0;
+  color: rgba(23, 23, 23, 0.05);
+}
+
+.btn {
+  width: 23.5rem;
+  height: 6rem;
+  background-color: #f7d43f;
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+// header
+header {
+  height: 3.6rem;
+  width: 34.5rem;
+  position: fixed;
+  top: 3rem;
+  left: calc(50% - 17.35rem);
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  p {
+    font-size: 2.6rem;
+    font-style: italic;
+    line-height: 1.38;
+    color: #fff;
+  }
+
+  // $x: 2rem;
+  // $y: 0.3rem;
+  // .hamburger-menu {
+  //   width: 3rem;
+  //   height: 2rem;
+  //   cursor: pointer;
+  //   position: relative;
+
+  //   .humbergar-menu-line,
+  //   .humbergar-menu-line::before,
+  //   .humbergar-menu-line::after {
+  //     position: absolute;
+  //     display: block;
+  //     width: 100%;
+  //     height: 0.3rem;
+  //     background: #fff;
+  //   }
+  //   .humbergar-menu-line::before,
+  //   .humbergar-menu-line::after {
+  //     content: "";
+  //   }
+
+  //   .humbergar-menu-line {
+  //     top: 0;
+  //   }
+
+  //   .humbergar-menu-line::before {
+  //     // (x-y)/2
+  //     top: calc((#{$x} - #{$y}) / 2);
+  //   }
+
+  //   .humbergar-menu-line::after {
+  //     // x-y
+  //     top: calc(#{$x} - #{$y});
+  //   }
+  // }
+  // nav{
+  //   display: none;
+  // }
+
+  .header-nav {
+    position: fixed;
+    top: -100vh;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #282f35;
+    transition: 0.3s;
+  }
+  .nav-list {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  .nav-item {
+    margin: 0 0 30px;
+    a {
+      font-size: 1.6rem;
+      font-style: italic;
+      line-height: 1.375;
+      letter-spacing: 0.05em;
+      color: #fff;
+    }
+  }
+  .nav-item:last-of-type {
+    margin: 0;
+  }
+  .burger-btn {
+    display: block;
+    .bar {
+      display: block;
+      height: 0.3rem;
+      width: 3rem;
+      background-color: #fff;
+      transition: 0.3s;
+      z-index: 10;
+    }
+    .bar-top,
+    .bar-mid {
+      margin-bottom: 0.8rem;
+    }
+  }
+
+  #check:checked ~ .burger-btn {
+    .bar-top {
+      transform: rotate(45deg);
+      position: relative;
+      top: 5.5px;
+    }
+    .bar-mid {
+      display: none;
+    }
+    .bar-bot {
+      transform: rotate(-45deg);
+      position: relative;
+      top: -5.5px;
+    }
+  }
+  #check:checked ~ .header-nav {
+    top: 0;
+  }
+}
+// end of header
+
+// top
+.top {
+  height: 60rem;
+  background-image: url("../img/fv-bgi_01@2x.jpg");
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  p {
+    color: #fff;
+    text-align: center;
+  }
+  .top-text1 {
+    font-size: 3.7rem;
+    line-height: 0.514;
+    margin-bottom: 5.3rem;
+  }
+  .top-text2 {
+    font-size: 3rem;
+    line-height: 1.667;
+  }
+}
+// end of top
+
+// concept
+#concept {
+  .container {
+    .title {
+      letter-spacing: 0.05em;
+    }
+    h2 {
+      font-size: 2rem;
+      line-height: 1.5;
+      text-align: center;
+      margin: 0 auto 3rem auto;
+
+      .pc-concept-br {
+        display: none;
+      }
+    }
+    .read {
+      height: 20.4rem;
+      margin-bottom: 3rem;
+    }
+    img {
+      width: 100%;
+      height: 15rem;
+      object-fit: cover;
+      object-position: center bottom;
+    }
+  }
+}
+// end of concept
+
+// works
+#works {
+  background-image: url("../img/works-bgi@2x.jpg");
+  background-size: auto 200%;
+  background-position: center top;
+
+  .works {
+    .work {
+      width: 32rem;
+      height: 33.2rem;
+      margin: 0 auto 3rem auto;
+      background-color: #fff;
+
+      p {
+        padding: 2.5rem 2rem 0 2rem;
+        font-size: 1.6rem;
+        line-height: 1.875;
+        color: #141414;
+        font-weight: 400;
+      }
+    }
+  }
+
+  .btn {
+    margin-top: 8rem;
+  }
+}
+// end of works
+
+// service
+#service {
+  .service {
+    width: 100%;
+    height: 25rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    p {
+      color: #fff;
+      font-style: italic;
+      font-size: 2rem;
+    }
+  }
+  .service1 {
+    background-image: url("../img/service-img01@2x.jpg");
+    margin-top: 8rem;
+  }
+  .service2 {
+    background-image: url("../img/service-img02@2x.jpg");
+  }
+  .service3 {
+    background-image: url("../img/sevice-img03@2x.jpg");
+  }
+  .service:nth-of-type(n + 2) {
+    margin-top: 3rem;
+  }
+
+  .service-container {
+    width: 34.5rem;
+    margin: 0 auto;
+  }
+}
+// end of service
+
+// contact
+#contact {
+  background-image: url(../img/contact-bgi@2x.jpg);
+  background-position: center;
+  background-size: cover;
+
+  h2 {
+    font-size: 2rem;
+    color: #fff;
+    width: 26rem;
+    margin: 8rem auto 3rem auto;
+  }
+}
+// end contact
+
+// footer
+footer {
+  height: 8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  p {
+    font-size: 1.4rem;
+    color: #282f35;
+  }
+}
+// end of footer
+
+//contact
+.contact-top {
+  height: 36rem;
+  background-image: url("../img/contact-page-bgi@2x.jpg");
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  h1 {
+    font-size: 3rem;
+    line-height: 1.6;
+    letter-spacing: 0.1em;
+    color: #fff;
+    font-style: italic;
+  }
+}
+.contact-form {
+  p {
+    margin-bottom: 1.3rem;
+    font-weight: 400;
+  }
+  .content-text {
+    font-size: 1.6rem;
+    font-weight: 400;
+    margin-top: 0.15rem;
+    color: #000;
+  }
+
+  .content-fill {
+    label {
+      display: inline-block;
+      margin-top: 2.2rem;
+      font-weight: 400;
+    }
+    input,
+    textarea {
+      width: 100%;
+      padding: 0 0.5rem;
+    }
+    input {
+      height: 3rem;
+    }
+    textarea {
+      height: 17rem;
+    }
+  }
+
+  button {
+    margin: 8rem auto;
+  }
+}
+//end of contact

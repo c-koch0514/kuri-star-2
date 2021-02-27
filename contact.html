@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>クリ★スタ中級編</title>
+  <meta name="description" content="クリ★スタ中級編模写">
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;700&family=Noto+Serif:ital,wght@0,700;1,700&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/custom_reset.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/pc-style.css">
+  <link rel="stylesheet" href="./css/pc-style.css">
+
+</head>
+
+<body>
+  <header>
+    <div class="header">
+      <p>Cresta Design</p>
+      <input type="checkbox" id="check" hidden>
+      <button class="burger-btn">
+        <label for="check">
+          <span class="bar bar-top"></span>
+          <span class="bar bar-mid"></span>
+          <span class="bar bar-bot"></span>
+        </label>
+        </button>
+      
+      <nav class="header-nav">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="./index.html#concept">Concept</a></li>
+          <li class="nav-item"><a href="./index.html#service">Service</a></li>
+          <li class="nav-item"><a href="./index.html#works">Works</a></li>
+          <li class="nav-item"><a href="./index.html#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+
+  <main>
+    <div class="contact-top">
+      <h1>Contact</h1>
+    </div>
+
+    <div class="container">
+      <form action="./index.html" class="contact-form">
+        <p class="read">お問い合わせ内容</p>
+        <div class="checkbox">
+          <div>
+            <input type="checkbox" id="content1">
+            <label for="cotent1" class="content-text">資料請求</label>
+          </div>
+          <div>
+            <input type="checkbox" id="content2">
+            <label for="cotent2" class="content-text">お電話でのご相談を希望</label>
+          </div>
+          <div>
+            <input type="checkbox" id="content3">
+            <label for="cotent3" class="content-text">申し込み</label>
+          </div>
+        </div>
+
+        <div class="content-fill">
+          <label for="name" class="read">担当者名</label>
+          <input type="text" id="name" class="read">
+          <label for="phone" class="read">電話番号</label>
+          <input type="number" id="phone" class="read">
+          <label for="email" class="read">メールアドレス</label>
+          <input type="email" id="email" class="read">
+          <label for="othre" class="read">その他</label>
+          <textarea id="othre" class="read"></textarea>
+        </div>
+
+        <button class="btn read">Submit</button>
+
+      </form>
+    </div>
+  </main>
+
+  <footer>
+    <p>©︎cresta.design all rights reserved</p>
+  </footer>
+
+</body>
+
+</html>

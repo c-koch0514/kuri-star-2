@@ -1,0 +1,195 @@
+@media screen and (min-width: 481px) {
+  .container {
+    width: 120rem;
+    margin: 0 auto;
+    padding-top: 10rem;
+  }
+  .title {
+    font-size: 6rem;
+    line-height: 0.8;
+    letter-spacing: 0.1em;
+    margin-bottom: 8rem;
+  }
+  .title::after {
+    content: "";
+    width: 20rem;
+    margin-left: 3rem;
+  }
+  .read {
+    font-size: 1.6rem;
+    line-height: 1.875;
+  }
+  .our-left,
+  .our-right {
+    font-size: 9rem;
+    padding: 7rem 0;
+  }
+  header {
+    width: 120rem;
+    left: calc(50% - 60rem);
+  }
+  header .hamburger-menu {
+    display: none;
+  }
+  header nav {
+    display: block;
+  }
+  header nav ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  header nav ul li a {
+    font-size: 1.6rem;
+    font-style: italic;
+    line-height: 1.375;
+    letter-spacing: 0.05em;
+    color: #fff;
+  }
+  header nav ul li:nth-child(n + 2) {
+    margin-left: 3rem;
+  }
+  .top {
+    height: 52vw;
+    background-size: cover;
+    padding-top: 28.4vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: unset;
+        -ms-flex-align: unset;
+            align-items: unset;
+  }
+  .top p {
+    text-align: left;
+  }
+  .top .top-text {
+    width: 120rem;
+  }
+  .top .top-text1 {
+    font-size: 7rem;
+    line-height: 0.714;
+    margin-bottom: 2.3rem;
+  }
+  .top .top-text2 {
+    font-size: 4rem;
+    line-height: 1.25;
+  }
+  .top .top-text2 .top-br {
+    display: none;
+  }
+  #concept .container .concept {
+    width: 100rem;
+    margin: 0 auto;
+  }
+  #concept .container .title {
+    margin-bottom: 7rem;
+  }
+  #concept .container h2 {
+    font-size: 3rem;
+    line-height: 1.6667;
+    margin: 0 auto 6rem auto;
+  }
+  #concept .container h2 .concept-br {
+    display: none;
+  }
+  #concept .container h2 .pc-concept-br {
+    display: block;
+  }
+  #concept .container .concept-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #concept .container .read {
+    height: auto;
+    width: 44rem;
+    margin-bottom: 0;
+  }
+  #concept .container img {
+    width: 44rem;
+    height: 24rem;
+  }
+  #works {
+    background-size: cover;
+    background-position: center top;
+  }
+  #works .works {
+    width: 100rem;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  #works .works .work {
+    margin: 0;
+  }
+  #service .services {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 1440px;
+    margin: 0 auto;
+    background-color: #282f35;
+  }
+  #service .service {
+    width: calc(100% / 3);
+    height: 32rem;
+    background-size: cover;
+    margin-top: 0;
+  }
+  #service .service p {
+    font-size: 4rem;
+  }
+  #service .service:nth-of-type(n + 2) {
+    margin-top: 0;
+  }
+  #service .service:hover {
+    opacity: 0.7;
+  }
+  #service .service-container {
+    width: 120rem;
+    margin: 0 auto;
+  }
+  #contact {
+    background-size: cover;
+  }
+  #contact h2 {
+    font-size: 2rem;
+    color: #fff;
+    width: 26rem;
+    margin: 8rem auto 4rem auto;
+  }
+  .contact-top {
+    height: 45.3rem;
+    background-size: cover;
+  }
+  .contact-top h1 {
+    font-size: 6rem;
+  }
+  .contact-form {
+    width: 70rem;
+    margin: 0 auto;
+  }
+  .contact-form .checkbox {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .contact-form .checkbox div {
+    margin-right: 2rem;
+  }
+}
+/*# sourceMappingURL=pc-style.css.map */
